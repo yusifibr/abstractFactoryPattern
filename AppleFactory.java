@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package abstracttFactoryPattern;
+
+/**
+ *
+ * @author Yusif
+ */
+public class AppleFactory implements Factory{
+
+    @Override
+    public Telephone createTelephone() {
+        return new AppleTele("Iphone 14 pro max", "IOS 15", 3200.0);
+    }
+
+    @Override
+    public Computer createComputer() {
+        return new AppleMac("Mac 13", "IOS 15", 5500);
+    }
+    
+}
